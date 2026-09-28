@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fbcfe8,
+        #f9a8d4
+    );
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background-color: #fff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(190, 70, 120, 0.20);
+}
+
+.topo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topo h1 {
+    color: #be5a83;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.topo p {
+    color: #9d6b7e;
+}
+
+.formulario label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #704052;
+
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 2px solid #f3c4d7;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background-color: #fffafd;
+
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #e890b5;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 144, 181, 0.18);
+}
+
+.notas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.notas label {
+    margin-top: 0;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #e99abb,
+        #d979a1
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(190, 90, 130, 0.30);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.resultado {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background-color: #fff1f7;
+
+    text-align: center;
+
+    border: 1px solid #f5c5d9;
+}
+
+.resultado span {
+    color: #9d6b7e;
+
+    font-size: 14px;
+}
+
+.resultado h2 {
+    margin-top: 8px;
+
+    color: #c45d87;
+
+    font-size: 22px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 25px;
+    }
+
+    .topo h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 450px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .notas {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .topo h1 {
+        font-size: 23px;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 13px;
+    }
+
+}
